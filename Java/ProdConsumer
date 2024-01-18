@@ -1,0 +1,27 @@
+class Q{
+    int n;
+    boolean valueset=false;
+    synchronized int get()
+    {
+        while(!valueset)
+        try{
+            Thread.sleep(2000);
+            wait();
+        }
+        catch(InterruptException e){
+            System.out.println("InterruptedException.caught");
+        }
+        System.out.println("Take"+n);
+        valueset=false;
+        notify();
+        return n;
+        }
+        synchronized void make(int n){
+            while(valueset)
+            try{
+                Thread.sleep(2000);
+                wait()
+            }
+        }
+    }
+}

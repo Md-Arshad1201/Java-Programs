@@ -1,0 +1,18 @@
+public class Overloading_Demo {
+    public void display(int a){
+        System.out.println("a value="+a);    
+    }
+    public void display(int a,int b){
+        System.out.println("a value="+a+" b value="+b);
+    }
+    public void display(int a,int b,int c){
+        System.out.println("a value="+a+" b value="+b+" c value="+c);
+    }
+    public static void main(String args[]){
+        Overloading_Demo m=new Overloading_Demo();
+                m.display(10);
+                m.display(10,20);
+                m.display(10,20,30);
+    }
+}
+

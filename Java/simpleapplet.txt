@@ -1,0 +1,12 @@
+import java.applet.*;
+import java.awt.*;
+public class SimpleApplet extends Applet{
+  public void paint(Graphics g)
+  {
+      g.setColor(Color.blue);
+      setBackground(Color.orange);
+      g.drawString("HI APPLET Program",80,150);
+      
+  }
+}
+
